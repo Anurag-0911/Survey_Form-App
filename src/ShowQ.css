@@ -1,0 +1,49 @@
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.question {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.options {
+    justify-content: center;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; Center align options horizontally */
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+label {
+    align-items: last baseline;
+    display: inline-block;
+    width: 100%; /* Make each option take up the full width */
+    cursor: pointer;
+    margin-bottom: 10px; /* Add some spacing between options */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.next-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
