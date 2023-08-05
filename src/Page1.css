@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+
+.name{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+.input_mail{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
