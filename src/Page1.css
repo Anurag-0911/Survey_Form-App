@@ -1,22 +1,118 @@
-.container{
-    width: 100%;
-    height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  
+  font-family: "poppins", sans-serif;
 }
 
-
-.name{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-
-}
-.input_mail{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+/* Body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; /* Added position and z-index */
 }
 
+/* Image */
+img {
+  position: absolute; /* Added absolute positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Set z-index to send the image behind */
+}
 
+/* Container */
+.container {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  background-color: rgba(
+    146,
+    145,
+    145,
+    0.4
+  ); /* Added opacity to make content more readable */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+  position: relative; /* Added position for children positioning */
+  z-index: 1; /* Set z-index to bring the content above the image */
+  height: 350px;
+}
+
+/* Title */
+
+#title:hover {
+  transform: scale(1.05);
+}
+
+#title {
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  font-family: "poppins", sans-serif;
+
+  margin: 20px 0;
+  letter-spacing: 2px;
+  text-shadow: 8px 8px 12px rgba(1, 1, 1, 0.3);
+  margin-top: -110px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 120px;
+  color: rgb(105, 126, 144);
+}
+
+/* Input fields */
+.name,
+.input_mail {
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+#start {
+  margin-top: 5px;
+  background-color: rgb(138, 138, 228);
+  border: none;
+  outline: none;
+  width: 6rem;
+  height: 2rem;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+#start:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+
+  outline: 1px solid black;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Page1.css'
 import { useNavigate } from 'react-router-dom';
+import img1 from './image/background6.jpg'
 
 const Page1 = () => {
 
@@ -23,7 +24,7 @@ const Page1 = () => {
             console.log(name,mail);
             if (name === "" || mail === '') {
                 console.log("empty value")
-                alert("value bhar ")
+                alert("Please Enter your Name and Email carefully.")
                 
             } else {
                 console.log(name , mail)
@@ -35,7 +36,13 @@ const Page1 = () => {
 
     return (
         <>
-            <h1 id='title'>Welcome To the Survey Form</h1>
+            
+                <img src={img1} alt = ""/>
+            
+            
+            <h1 id='title'>Welcome To The Survey Form</h1>
+           
+            
 
             <div className='container'>
                 <div className='name'>
@@ -58,7 +65,5 @@ const Page1 = () => {
 };
 
 export default Page1
-
-
 
 
