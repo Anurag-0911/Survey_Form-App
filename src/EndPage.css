@@ -1,0 +1,87 @@
+/* 
+.submit-button {
+    margin: 0 auto;
+    background-color: #ff0000bc;
+    color: #fff;
+    border: none;
+    width: 100px;
+    
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .submit-button:hover {
+    background-color:blue;
+  }
+  .ty {
+    
+    background-color: rgba(146, 145, 145, 0.177);
+    backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .tyb{
+display: flex;
+flex-direction: column;
+  }
+
+#tnq{
+  margin-right: 50px;
+} */
+
+
+
+
+
+.ty {
+  text-align: center; /* Center-align text */
+  background-color: rgba(146, 145, 145, 0.177);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0 auto 1rem; /* Center horizontally and add margin at the bottom */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tyb {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content horizontally */
+}
+
+.submit-button {
+  margin: 0 auto;
+  background-color: #ff0000bc;
+  color: #fff;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: blue;
+}
+
+#tnq {
+  margin-top: 10px; /* Add some margin above the Thank You text */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .ty {
+    font-size: 1.2rem; /* Decrease font size for smaller screens */
+  }
+}

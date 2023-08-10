@@ -21,7 +21,7 @@ const qna = [
         option4: "Sci-Fi"
     },
     {
-        question: "Which mode of transportation do you use for your daily commute?",
+        question: "Which mode of transportation do you use?",
         option1: "Car",
         option2: "Public transportation",
         option3: "Bicycle",

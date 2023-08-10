@@ -20,8 +20,7 @@ const Page1 = () => {
     const start = ()=>
     
         {
-            console.log("start btn clicked")
-            console.log(name,mail);
+            
             if (name === "" || mail === '') {
                 console.log("empty value")
                 alert("Please Enter your Name and Email carefully.")

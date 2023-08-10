@@ -1,49 +1,64 @@
+
+
 .question-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.question {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.options {
+    display: block;
+   
     justify-content: center;
     text-align: center;
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; Center align options horizontally */
-    gap: 10px;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-label {
-    align-items: last baseline;
-    display: inline-block;
-    width: 100%; /* Make each option take up the full width */
+    padding: 2rem;
+  }
+  
+  .question {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  
+  
+  .options label {
+    
+    margin-left: 20px;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 10px;
     cursor: pointer;
-    margin-bottom: 10px; /* Add some spacing between options */
-}
-
-input[type="radio"] {
-    margin-right: 10px;
-}
-
-.next-button {
-    padding: 10px 20px;
-    font-size: 18px;
+  }
+  
+  .options input[type="radio"] {
+  
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  
+ 
+  .next-button {
+    margin: 0 auto;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     border: none;
+    width: 100px;
+    
     border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.next-button:hover {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .next-button:hover {
     background-color: #0056b3;
-}
+  }
+  
